@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- LINK TO FIREBASE GOES HERE -->
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase.js"></script>
+</head>
+<body>
+    
+ <!-- Jumbotron -->
+    <div class="jumbotron">
+      <h1 class="text-center">Sign-Up Today!</h1>
+    </div>
+    
+    <div class="row">
+      
+      <!-- Sign-Up Card-->
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-heading">
+            <h3 class="card-title">New Member Sign-Up</h3>
+          </div>
+          
+          <div class="card-body">
+            
+            <!-- Sign-up Form (note the various input "types")-->
+            <form role="form">
+              <div class="form-group row">
+                <label for="name-input">Name:</label>
+                <input class="form-control" id="name-input" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="email-input">Email:</label>
+                <input class="form-control" id="email-input" type="email">
+              </div>
+              <div class="form-group row">
+                <label for="user-input">UserName:</label>
+                <input class="form-control" id="user-input" type="text">
+              </div>
+              <div class="form-group row">
+                <label for="password-input">Create your personal password:</label>
+                <input  class="form-control" id="userPassword" type="password">              </div>
+              <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+            </form>
+            
+          </div>
+        </div>
+      </div>
+      
+      <!-- Most Recent Member Card -->
+      <div class="col-lg-6">
+        <div class="card">
+          <div class="card-heading">
+            <h2 class="card-title">Returning Member</h2>
+          </div>
+          <form class="form-signin">
+            <h4 class="form-signin-heading">Please sign in</h4>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          </form>
+          </div>
+        </div>
+        
+      </div>
+      
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  
+
+
+
+</body>
+</html>
